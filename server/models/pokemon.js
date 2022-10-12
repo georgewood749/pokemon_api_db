@@ -2,7 +2,8 @@ const { pool } = require('../initdb');
 
 class Pokemon {
     constructor(data) {
-        this.id = data.id
+        this.id = data._id
+        this.pokeId = data.pokeId
         this.name = data.name;
         this.type = data.type;
     }
@@ -15,7 +16,7 @@ class Pokemon {
                 if (!pokemons.length) { throw new Error('No pokemon here!') }
                 resolve(pokemons);
             } catch (err) {
-                reject(`Error retrieving dogs: ${err.message}`)
+                reject(`Error retrieving pokemons: ${err.message}`)
             }
         })
     }

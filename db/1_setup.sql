@@ -2,7 +2,8 @@
 DROP TABLE IF EXISTS pokemons;
 
 CREATE TABLE pokemons (
-    id int NOT NULL,
+    id serial PRIMARY KEY,
+    pokeId int NOT NULL,
     name varchar(255) NOT NULL,
-    type int NOT NULL,
+    type varchar(255) NOT NULL
 );

@@ -1,4 +1,4 @@
-INSERT INTO pokemons (id, name, type) 
+INSERT INTO pokemons (pokeId, name, type) 
 VALUES
     (1, 'Bulbasaur', 'grass'),
     (2, 'Ivysaur', 'grass'),
