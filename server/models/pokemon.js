@@ -2,7 +2,7 @@ const { pool } = require('../initdb');
 
 class Pokemon {
     constructor(data) {
-        this.id = data._id
+        this.id = data.id
         this.name = data.name;
         this.type = data.type;
     }
